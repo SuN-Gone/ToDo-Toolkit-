@@ -4,7 +4,7 @@ const todoSlice = createSlice({
   name: 'todos',
   initialState: {
     tasks: JSON.parse(localStorage.getItem('tasks')) || [],
-    filter: 'all', // 'all', 'active', 'completed'
+    filter: 'all',
   },
   reducers: {
     addTask: (state, action) => {
